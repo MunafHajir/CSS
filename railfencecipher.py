@@ -37,5 +37,6 @@ for i in matrix:
             pass
         else:
             translate += _
-            
-        
+
+#INPUT: MUNAFHAJIR
+#Output: MFIUAHJRNA
