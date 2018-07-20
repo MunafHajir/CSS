@@ -7,7 +7,7 @@ for i in range(key):
 
 dir_flag = False #false means down
 z = 0
-y = 0
+y = 0    #tracks message
 for i in range(len(message)):
     if i == 0:
         matrix[0][0] = message[0]
