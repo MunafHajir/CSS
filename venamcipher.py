@@ -2,11 +2,11 @@ def encrypt(splitted_list, keyword,alphabet):
     i = 0
     translate = ""
     maxi = len(splitted_list)-1
-    while i < maxi:
-        for i,j in enumerate(splitted_list[i]):
+    while i <= maxi:
+        for temp,j in enumerate(splitted_list[i]):
             #print(i,j)
             i1 = alphabet.index(j)
-            i2 = alphabet.index(keyword[i])
+            i2 = alphabet.index(keyword[temp])
             
             value = (i1+i2) %26
             translate += alphabet[value]
@@ -32,4 +32,5 @@ alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #print(alphabet.index("A"))
 splitted_list = splitted(message,keyword,key_length,splitted_list)
 
-encrypt(splitted_list,keyword,alphabet)
+translate = encrypt(splitted_list,keyword,alphabet)
+print("ENCRRYPTED TEXT: ",translate)
